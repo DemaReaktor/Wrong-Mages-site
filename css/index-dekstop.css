@@ -2,9 +2,53 @@ html,body {
     padding: 0;
     margin: 0;
 }
+body{
+    background-image: linear-gradient(rgba(255,255,255,0.4) 0 100%),url("../images/fon.png");
+    background-size: cover;
+}
+@font-face {
+    font-family: "Gothic";
+    src: url("../font1.ttf") format("opentype"),
+    url("../font1.woff") format("woff");
+}
+.button{
+    background-color: rgba(0,0,0,0.5);
+    border: solid black 2px; 
+    border-radius: 20px;
+    margin-left: 10px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px;
+    color: black;
+    font-family: "Gothic";
+}
 
 .menu {
     height: 100px;
     background-color: #8793FF;
     opacity: 85%;
+    border-bottom: dashed #FFE600 3px;
+    align-self: center;
+    display: flex;
+}
+
+.left-menu-items,.right-menu-items  {
+    display: flex;
+    align-items: center;
+    flex:1;
+    margin: 20px;
+}
+.right-menu-items{
+    justify-content: right;
+}
+
+#logo, #telegram,#instagram, #twitter{
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+}
+#language,#menu-button{
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
 }
