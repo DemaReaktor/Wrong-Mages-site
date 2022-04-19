@@ -3,7 +3,13 @@ html,body {
     margin: 0;
 }
 body{
-    background-image: linear-gradient(rgba(255,255,255,0.4) 0 100%),url("../images/fon.png");
+    background-image: linear-gradient(rgba(255,255,255,0.4) 0 100%),url("../images/fon.png") , url("../images/kartaGreen.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+body::after{
+    background-image: linear-gradient(rgba(255,255,255,0.4) 0 100%),url("../images/kartaGreen.jpg");
     background-size: cover;
 }
 @font-face {
@@ -12,7 +18,7 @@ body{
     url("../font1.woff") format("woff");
 }
 .button{
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(255,255,255,0.5);
     border: solid black 2px; 
     border-radius: 20px;
     margin-left: 10px;
@@ -21,6 +27,8 @@ body{
     padding: 15px;
     color: black;
     font-family: "Gothic";
+    font-size: 25px;
+    font-weight:bold;
 }
 
 .menu {
@@ -30,6 +38,7 @@ body{
     border-bottom: dashed #FFE600 3px;
     align-self: center;
     display: flex;
+    width: 100%;
 }
 
 .left-menu-items,.right-menu-items  {
@@ -38,7 +47,11 @@ body{
     flex:1;
     margin: 20px;
 }
+.left-menu-items{
+margin-left: 70px;
+}
 .right-menu-items{
+    margin-right: 70px;
     justify-content: right;
 }
 
@@ -51,4 +64,90 @@ body{
     margin-left: 20px;
     width: 60px;
     height: 60px;
+}
+#wrong-mages, h1{
+    flex:1;
+}
+.table {
+    display: flex;
+    background-color: white;
+    opacity: 70%;
+    border: black 1px solid;
+    border-radius: 50px;
+}
+#Wrong-mages-table{
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 810px;
+    height: 360px;
+}
+#Wrong-mages-image, #game{
+margin: 20px;
+}
+#Wrong-mages-image{
+    width: 380px;
+    height: 320px;
+}
+#game{
+text-align: center;
+align-self: center;
+font-family: fantasy;
+font-size: 45px;
+}
+h1{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: "Gothic";
+    font-size: 50px;
+}
+p{
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 25px;
+    font-family: cursive;
+}
+#colums{
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+}
+.colum-item{
+    border: solid 4px;
+    border-radius: 20px;
+    margin: 5px;
+}
+#ci1{
+    border-color: #010042;
+    background-color: rgba(0, 0, 255, 20%);
+}
+#ci2{
+    border-color: #ff0000;
+    background-color: rgba(255, 0, 0, 20%);
+}
+#ci3{
+    border-color: #00ff00;
+    background-color: rgba(0, 255, 0, 20%);
+}
+#ci4{
+    border-color: #ffff00;
+    background-color: rgba(255, 255, 0, 20%);
+}
+#ci5{
+    border-color: #ff00ff;
+    background-color: rgba(255, 00, 255, 20%);
+}
+#colum-number{
+    margin: 15px;
+    margin-bottom: 0px;
+    text-align: left;
+    font-size: 35px;
+    font-family: "Gothic";
+}
+.colum-item p{
+    margin: 15px;
+    margin-top: 10px;
 }
