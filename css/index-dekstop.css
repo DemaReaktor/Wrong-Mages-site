@@ -1,0 +1,10 @@
+html,body {
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    height: 100px;
+    background-color: #8793FF;
+    opacity: 85%;
+}
