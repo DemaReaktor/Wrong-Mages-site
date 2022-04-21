@@ -1,33 +1,94 @@
+/* body */
 html,body {
     padding: 0;
     margin: 0;
 }
 body{
+    display: flex;
+    flex-direction: column;
     background-image: linear-gradient(rgba(255,255,255,0.4) 0 100%),url("../images/fon.png") , url("../images/kartaGreen.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    
+
 }
+body *{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+body * *{
+    margin: 0px;
+}
+
+/* font */
 @font-face {
     font-family: "Gothic";
     src: url("../font1.ttf") format("opentype"),
     url("../font1.woff") format("woff");
 }
-.button{
+/* classes and other general elements*/
+
+.table {
+    display: flex;
     background-color: rgba(255,255,255,0.5);
-    border: solid black 2px; 
+    border: black 1px solid;
+    border-radius: 50px;
+    margin: auto;
+}
+.table *{
+    margin: 20px;
+    align-self: center;
+    text-align: center;
+}
+
+.button{
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: inset 0px 0px 0px 2px #000;
     border-radius: 20px;
-    margin-left: 10px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
     text-align: center;
     vertical-align: middle;
-    padding: 15px;
+    padding: 20px;
     color: black;
     font-family: "Gothic";
-    font-size: 25px;
+    font-size: 40px;
     font-weight:bold;
 }
 
-.menu {
+.colum-item{
+    border: solid 4px;
+    border-radius: 20px;
+    margin: 5px;
+}
+.colum-number{
+    margin: 15px;
+    margin-bottom: 0px;
+    text-align: left;
+    font-size: 35px;
+    font-family: "Gothic";
+}
+
+h1{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Gothic";
+    font-size: 50px;
+}
+p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+/* ids */
+/* menu */
+#menu {
+    margin: 0px;
     height: 100px;
     background-color: #8793FF;
     opacity: 85%;
@@ -37,40 +98,47 @@ body{
     width: 100%;
 }
 
-.left-menu-items,.right-menu-items  {
+#left-menu-items,#right-menu-items  {
     display: flex;
     align-items: center;
     flex:1;
     margin: 20px;
 }
-.left-menu-items{
+#left-menu-items{
 margin-left: 70px;
 }
-.right-menu-items{
+#right-menu-items{
     margin-right: 70px;
     justify-content: right;
 }
 
+/* left menu */
 #logo, #telegram,#instagram, #twitter{
     margin-right: 20px;
     width: 60px;
     height: 60px;
 }
+/* right menu */
 #language,#menu-button{
     margin-left: 20px;
     width: 60px;
     height: 60px;
 }
+#play{
+    font-size: 25px;
+    background-color: rgba(255,255,255,0.5);
+    margin: 0px;
+    margin-left: 20px;
+    padding: 15px;
+    height: 30px;
+}
+
+/* wrong mages */
+
 #wrong-mages, h1{
     flex:1;
 }
-.table {
-    display: flex;
-    background-color: white;
-    opacity: 70%;
-    border: black 1px solid;
-    border-radius: 50px;
-}
+
 #Wrong-mages-table{
     margin-top: 70px;
     margin-left: auto;
@@ -78,9 +146,7 @@ margin-left: 70px;
     width: 810px;
     height: 360px;
 }
-#Wrong-mages-image, #game{
-margin: 20px;
-}
+
 #Wrong-mages-image{
     width: 380px;
     height: 320px;
@@ -91,31 +157,14 @@ align-self: center;
 font-family: fantasy;
 font-size: 45px;
 }
-h1{
-    margin-top: 50px;
-    margin-bottom: 0px;
-    text-align: center;
-    font-family: "Gothic";
-    font-size: 50px;
-}
-p{
-    margin-bottom: 0px;
-    margin-top: 10px;
-    margin-left: 70px;
-    margin-right: 70px;
-    font-size: 25px;
-    font-family: cursive;
-}
-#colums{
+
+/* colums */
+#colums, #mana-table{
     margin-left: 70px;
     margin-right: 70px;
     display: flex;
 }
-.colum-item{
-    border: solid 4px;
-    border-radius: 20px;
-    margin: 5px;
-}
+
 #ci1{
     border-color: #010042;
     background-color: rgba(0, 0, 255, 20%);
@@ -136,14 +185,68 @@ p{
     border-color: #ff00ff;
     background-color: rgba(255, 00, 255, 20%);
 }
-.colum-number{
-    margin: 15px;
-    margin-bottom: 0px;
-    text-align: left;
-    font-size: 35px;
-    font-family: "Gothic";
-}
-.colum-item p{
+#colum-item p{
     margin: 15px;
     margin-top: 10px;
 }
+
+/* mana */
+#mana-text{
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-between; */
+}
+#mana-text p{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    text-align: left;
+    align-self: flex-start;
+}
+#mana-text .button{
+    /* align-self:center; */
+    margin-right: auto;
+
+}
+#mana-table .table{
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 340px;
+    height: 340px;
+    justify-content: center;
+}
+#mana-image{
+    align-self: center;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+
+/* tokenomic */
+#tokenomic-table{
+    width: 900px;
+    height: 450px;
+}
+#tokenomic-image{
+    align-self: center;
+    text-align: center;
+    width: 860px;
+    height: 410px;
+}
+
+/* battle */
+#battle-table{
+    margin-top: 10px;
+    width: 480px;
+}
+#battle-table *{
+    height: 200px;
+    width: 200px;
+}
+#battle-description{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Plan */
