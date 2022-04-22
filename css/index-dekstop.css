@@ -159,7 +159,7 @@ font-size: 45px;
 }
 
 /* colums */
-#colums, #mana-table{
+#colums{
     margin-left: 70px;
     margin-right: 70px;
     display: flex;
@@ -194,7 +194,6 @@ font-size: 45px;
 #mana-text{
     display: flex;
     flex-direction: column;
-    /* justify-content:space-between; */
 }
 #mana-text p{
     margin-left: 0px;
@@ -205,9 +204,12 @@ font-size: 45px;
     align-self: flex-start;
 }
 #mana-text .button{
-    /* align-self:center; */
     margin-right: auto;
-
+}
+#mana-table{
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
 }
 #mana-table .table{
     margin-left: 60px;
@@ -250,3 +252,41 @@ font-size: 45px;
 }
 
 /* Plan */
+#plan-text{
+    display: flex;
+    flex-direction: column;
+}
+#plan-text p{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    text-align: left;
+    align-self: flex-start;
+}
+#plan-text .button{
+    margin-right: auto;
+}
+#plan-table{
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+}
+#plan-table .table{
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 390px;
+    height: 490px;
+    justify-content: center;
+}
+#plan-image{
+    align-self: center;
+    text-align: center;
+    width: 350px;
+    height: 450px;
+}
+
+/* FAQ */
+#two-buttons{
+    display: flex;
+}

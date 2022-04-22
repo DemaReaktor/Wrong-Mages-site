@@ -1,0 +1,134 @@
+/* body */
+html,body {
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(255,255,255,0.4) 0 100%),url("../images/fon.png") , url("../images/kartaGreen.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+body *{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+body * *{
+    margin: 0px;
+}
+
+/* font */
+@font-face {
+    font-family: "Gothic";
+    src: url("../font1.ttf") format("opentype"),
+    url("../font1.woff") format("woff");
+}
+/* classes and other general elements*/
+
+.table {
+    display: flex;
+    background-color: rgba(255,255,255,0.5);
+    border: black 1px solid;
+    border-radius: 50px;
+    margin: auto;
+}
+.table *{
+    margin: 20px;
+    align-self: center;
+    text-align: center;
+}
+
+.button{
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: inset 0px 0px 0px 2px #000;
+    border-radius: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px;
+    color: black;
+    font-family: "Gothic";
+    font-size: 40px;
+    font-weight:bold;
+}
+
+.colum-item{
+    border: solid 4px;
+    border-radius: 20px;
+    margin: 5px;
+}
+.colum-number{
+    margin: 15px;
+    margin-bottom: 0px;
+    text-align: left;
+    font-size: 35px;
+    font-family: "Gothic";
+}
+
+h1{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Gothic";
+    font-size: 50px;
+}
+p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+/* ids */
+/* menu */
+#menu {
+    margin: 0px;
+    height: 100px;
+    background-color: #8793FF;
+    opacity: 85%;
+    border-bottom: dashed #FFE600 3px;
+    align-self: center;
+    display: flex;
+    width: 100%;
+}
+
+#left-menu-items,#right-menu-items  {
+    display: flex;
+    align-items: center;
+    flex:1;
+    margin: 20px;
+}
+#left-menu-items{
+margin-left: 70px;
+}
+#right-menu-items{
+    margin-right: 70px;
+    justify-content: right;
+}
+
+/* left menu */
+#logo, #telegram,#instagram, #twitter{
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+}
+/* right menu */
+#language,#menu-button{
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+}
+#play{
+    font-size: 25px;
+    background-color: rgba(255,255,255,0.5);
+    margin: 0px;
+    margin-left: 20px;
+    padding: 15px;
+    height: 30px;
+}
