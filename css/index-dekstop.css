@@ -6,10 +6,10 @@ html,body {
 body{
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(rgba(255,255,255,0.4) 0 100%),url("../images/fon.png") , url("../images/kartaGreen.jpg");
+    background-image: linear-gradient(rgba(255,255,255,0.4) 0 100%),url("../images/fon.png") ;
     background-size: cover;
     background-repeat: no-repeat;
-
+    height: 100vh;
 }
 body *{
     margin-left: 70px;

@@ -32,20 +32,6 @@ body * * {
 
 /* classes and other general elements*/
 
-.table {
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: black 1px solid;
-    border-radius: 50px;
-    margin: auto;
-}
-
-.table * {
-    margin: 20px;
-    align-self: center;
-    text-align: center;
-}
-
 .button {
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: inset 0px 0px 0px 2px #000;
@@ -62,25 +48,6 @@ body * * {
     font-weight: bold;
 }
 
-.new {
-    border-radius: 17px;
-    background-color: rgba(255, 211, 211, 0.75);
-    padding: 20px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-}
-
-.date {
-    margin-right: 10px;
-    width: 135px;
-    align-self: center;
-}
-
-.text {
-    width: 805px;
-}
-
 h1 {
     margin-top: 50px;
     margin-bottom: 10px;
@@ -89,24 +56,17 @@ h1 {
     font-size: 50px;
 }
 
+h2 {
+    text-align: center;
+    font-family: "Gothic";
+    font-size: 35px;
+}
+
 p {
     font-size: 25px;
     font-family: cursive;
     text-align: start;
 }
-
-/*scroll */
-::-webkit-scrollbar{
-    width: 20px; 
-} 
-::-webkit-scrollbar-track{
-     border-radius: 10px; 
-     background-color: black;
-}
-::-webkit-scrollbar-thumb{
-     border-radius: 8px; 
-     background-color: white;
-} 
 
 /* ids */
 /* menu */
@@ -165,23 +125,47 @@ p {
     height: 30px;
 }
 
-/* table */
-#scroll-table {
-    overflow-y: scroll;
-    align-self: center;
-    height: calc(100vh - 232px);
-    margin-bottom: auto;
-    padding-right: 10px;
+/* plans */
+#plans {
+    display: flex;
+    flex-direction: row;
 }
-#scroll-table::before{
-    width: 1036px;
-    height: calc(100vh - 236px);
-    position:fixed;
-    top: 222px;
-    left: calc(50vw - 516px); 
-    content: '';
-    z-index: -1;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 15px;
-    background: linear-gradient(rgba(255,255,0,1),rgba(255,255,0,0));
+
+#plan-image {
+    height: 470px;
+    width: 350px;
+}
+
+.deploy {
+    height: 60px;
+    width: 60px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100vw - 530px);
+    border: solid black 2px;
+    border-radius: 15px;
+    align-items: center;
+    height: 60px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#done {
+    background-color: rgba(0, 255, 0, 0.4);
+}
+
+#almost-done {
+    background-color: rgba(255, 255, 0, 0.4);
+}
+
+#will-done {
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+#future{
+    background-color: rgba(255, 255, 255, 0.4);
 }
