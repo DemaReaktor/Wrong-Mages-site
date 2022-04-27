@@ -33,10 +33,10 @@ body * *{
     background-color: rgba(255,255,255,0.5);
     border: black 1px solid;
     border-radius: 50px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 15px;
     padding-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .table *{
     align-self: center;
@@ -60,29 +60,17 @@ body * *{
     font-weight:bold;
 }
 
-.colum-item{
-    border: solid 4px;
-    border-radius: 20px;
-    margin: 5px;
-}
-.colum-number{
-    margin: 15px;
-    margin-bottom: 0px;
-    text-align: left;
-    font-size: 35px;
-    font-family: "Gothic";
-}
-.colum-item p{
-    margin: 15px;
-    margin-top: 10px;
-}
-
 h1{
     margin-top: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center;
     font-family: "Gothic";
     font-size: 50px;
+}
+h2{
+    margin-bottom: 10px;
+    font-family: "Gothic";
+    font-size: 35px;
 }
 p{
     margin-bottom: 0px;
@@ -152,76 +140,8 @@ margin-left: 70px;
     height: 30px;
 }
 
-/* wrong mages */
-
-#wrong-mages, h1{
-    flex:1;
-}
-
-#Wrong-mages-table{
-    margin-top: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 810px;
-    height: 360px;
-}
-
-#Wrong-mages-image{
-    width: 380px;
-    height: 320px;
-}
-#game{
-text-align: center;
-align-self: center;
-font-family: fantasy;
-font-size: 45px;
-}
-
-/* colums */
-#colums{
-    display: flex;
-}
-
-#ci1{
-    border-color: #010042;
-    background-color: rgba(0, 0, 255, 20%);
-}
-#ci2{
-    border-color: #ff0000;
-    background-color: rgba(255, 0, 0, 20%);
-}
-#ci3{
-    border-color: #00ff00;
-    background-color: rgba(0, 255, 0, 20%);
-}
-#ci4{
-    border-color: #ffff00;
-    background-color: rgba(255, 255, 0, 20%);
-}
-#ci5{
-    border-color: #ff00ff;
-    background-color: rgba(255, 00, 255, 20%);
-}
-
 /* mana */
-#mana-text{
-    display: flex;
-    flex-direction: column;
-}
-#mana-text p{
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    margin-top: 0px;
-    text-align: left;
-    align-self: flex-start;
-}
-#mana-text .button{
-    margin-right: auto;
-}
 #mana-table{
-    margin-left: 70px;
-    margin-right: 70px;
     display: flex;
 }
 #mana-table .table{
@@ -232,10 +152,19 @@ font-size: 45px;
     justify-content: center;
 }
 #mana-image{
-    align-self: center;
-    text-align: center;
     width: 300px;
     height: 300px;
+}
+
+/* ways-use */
+#ways-use{
+    margin-top: 10px;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+#ways-use *{
+    height: 180px;
+    width: 180px;
 }
 
 /* tokenomic */
@@ -248,57 +177,4 @@ font-size: 45px;
     text-align: center;
     width: 860px;
     height: 410px;
-}
-
-/* battle */
-#battle-table{
-    margin-top: 10px;
-}
-#battle-table *{
-    height: 200px;
-    width: 200px;
-}
-#battle-description{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Plan */
-#plan-text{
-    display: flex;
-    flex-direction: column;
-}
-#plan-text p{
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    margin-top: 0px;
-    text-align: left;
-    align-self: flex-start;
-}
-#plan-text .button{
-    margin-right: auto;
-}
-#plan-table{
-    margin-left: 70px;
-    margin-right: 70px;
-    display: flex;
-}
-#plan-table .table{
-    margin-left: 60px;
-    margin-right: 60px;
-    width: 390px;
-    height: 490px;
-    justify-content: center;
-}
-#plan-image{
-    align-self: center;
-    text-align: center;
-    width: 350px;
-    height: 450px;
-}
-
-/* FAQ */
-#two-buttons{
-    display: flex;
 }
