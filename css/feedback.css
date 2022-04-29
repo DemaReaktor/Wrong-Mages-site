@@ -155,6 +155,11 @@ p {
 }
 
 @media (max-width:768px){
+    body{
+        background-image: linear-gradient(rgba(255, 255, 255, 0.4) 0 100%), url("../images/kartaGreen.jpg");
+        background-size:contain;
+        background-repeat: repeat;
+    }
     body *{
         margin-left: 15px;
         margin-right: 15px;
