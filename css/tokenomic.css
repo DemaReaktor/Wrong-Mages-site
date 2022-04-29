@@ -245,6 +245,7 @@ margin-left: 70px;
         margin: 0px;
         padding: 0px;
         width: 0px;
+        height: 0px;
         border:0px;
     }
     #mana-table .table *{
@@ -256,6 +257,19 @@ margin-left: 70px;
     }
     #tokenomic-image{
         width: calc(100vw - 40px);
+        height: auto;
+    }
+}
+@media (max-width:1200px) and (min-width:768px){
+    #mana-table{
+        flex-direction: column;
+    }
+    #mana-table .table{
+        margin: auto;
+        margin-top: 10px;
+    }
+    #tokenomic-image{
+        width: calc(100vw - 340px);
         height: auto;
     }
 }
