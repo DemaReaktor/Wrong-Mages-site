@@ -252,6 +252,20 @@ div p,div h2{
         margin: 0px;
         margin-right: 5px;
     }
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        border-radius: 7.5px;
+        background-color: black;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        background-color: white;
+    }
+    
 }
 
 @media (max-width:1200px) and (min-width:768px) {}

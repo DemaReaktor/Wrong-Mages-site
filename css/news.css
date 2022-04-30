@@ -9,8 +9,9 @@
 
 .date {
     margin-right: 10px;
-    width: 135px;
+    width: 150px;
     align-self: center;
+    text-align: center;
 }
 
 .text {
@@ -21,19 +22,48 @@
 #scroll-table {
     overflow-y: scroll;
     align-self: center;
-    height: calc(100vh - 232px);
-    margin-bottom: auto;
+    height: calc(100vh - 241px);
+    margin-top: 8px;
     padding-right: 10px;
 }
 #scroll-table::before{
-    width: 1036px;
-    height: calc(100vh - 236px);
+    width: 1051px;
+    height: calc(100vh - 233px);
     position:fixed;
-    top: 222px;
-    left: calc(50vw - 516px); 
+    top: 233px;
+    left: calc(50vw - 525.5px); 
     content: '';
     z-index: -1;
     border-top-left-radius: 20px;
     border-top-right-radius: 15px;
     background: linear-gradient(rgba(255,255,0,1),rgba(255,255,0,0));
+}
+@media (max-width:1200px) and (min-width:768px){
+    .text{
+        height: auto;
+        width: calc(100vw - 386px);
+    }
+    #scroll-table:before{
+        width: calc(100vw - 140px);
+        left: 70px;
+    }
+}
+@media (max-width:768px){
+    #scroll-table{
+        padding-right: 5px;
+        margin-top: 0px;
+        height: calc(100vh - 192px);
+    }
+    #scroll-table:before{
+        width: 0px;
+    }
+    .new{
+        flex-direction: column;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .text{
+        width: calc(100vw - 60px);
+    }
+
 }
