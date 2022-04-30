@@ -25,8 +25,6 @@
     margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
-    width: 810px;
-    height: 360px;
 }
 
 #Wrong-mages-image{
@@ -102,10 +100,10 @@ font-size: 45px;
 }
 
 /* tokenomic */
-#tokenomic-table{
+/* #tokenomic-table{
     width: 900px;
     height: 450px;
-}
+} */
 #tokenomic-image{
     align-self: center;
     text-align: center;
@@ -150,8 +148,8 @@ font-size: 45px;
 #plan-table .table{
     margin-left: 60px;
     margin-right: 60px;
-    width: 390px;
-    height: 490px;
+    /* width: 390px;
+    height: 490px; */
     justify-content: center;
 }
 #plan-image{
@@ -164,4 +162,110 @@ font-size: 45px;
 /* FAQ */
 #two-buttons{
     display: flex;
+}
+
+@media (max-width:1200px) and (min-width:768px){
+    #Wrong-mages-table,#colums,#mana-table{
+        flex-direction: column;
+    }
+    #Wrong-mages-image{
+        width: 300px;
+        height: 260px;
+    }
+    #mana-text .button{
+        margin-left: auto;
+    }
+    #mana-table .table{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #tokenomic-table{
+        height: auto;
+        width: auto;
+    }
+    #tokenomic-image{
+        width: calc(100vw - 170px);
+        height: auto;
+    }
+    #plan-table .table{
+        padding: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #plan-image{
+        width: 250px;
+        height: 300px;
+    }
+}
+@media (max-width:768px){
+    #Wrong-mages-table,#colums{
+        flex-direction: column;
+    }
+    #Wrong-mages-table{
+        margin-top: 30px;
+        background-color: rgba(0,0,0,0);
+        border: 0px;
+    }
+    #Wrong-mages-image{
+        width: calc(100vw - 30px);
+        height: auto;
+    }
+    #game{
+        width: calc(100vw - 30px);
+        font-size: 30px;
+    }
+    .colum-item{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #mana-table{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #mana-text .button{
+        margin-left: auto;
+    }
+    #mana-table .table{
+        margin-left: auto;
+        margin-right: auto;
+        width: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+    #mana-image{
+        width: 0px;
+    }
+    #tokenomic-table{
+        height: auto;
+        width: auto;
+    }
+    #tokenomic-image{
+        width: calc(100vw - 40px);
+        height: auto;
+    }
+    #battle-table *{
+        width: calc(50vw - 20px);
+        height: auto;
+    }
+    #plan-table{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #plan-table .table{
+        padding: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        border: 0px;
+    }
+    #plan-text .button{
+        margin-left: auto;
+    }
+    #plan-image{
+        width: 0px;
+        margin-right: 0px;
+        height: 0px;
+    }
+    #two-buttons{
+        justify-content: center;
+    }
 }
