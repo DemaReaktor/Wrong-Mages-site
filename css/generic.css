@@ -97,7 +97,7 @@ div h2 {
     margin: 0px;
 }
 
-input[type=text], textarea {
+input[type="text"], textarea {
     background-color: rgba(255, 255, 194,0.5);
     border: 2px solid rgb(255, 64, 0);
     font-size: 20px;
