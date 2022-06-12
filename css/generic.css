@@ -148,6 +148,14 @@ div h2 {
     margin-left: auto;
     margin-right: auto;
 }
+.comment{
+    background-color: #FFE600;
+    border-radius: 5px;
+    border-color: #000;
+}
+.comment *{
+    font-family: "Gothic";
+}
 
 .table * {
     align-self: center;
