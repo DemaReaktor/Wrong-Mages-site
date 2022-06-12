@@ -54,9 +54,8 @@ a:hover {
 }
 
 .comment-table {
-    background-color: #FFE600;
-    border-radius: 5px;
-    border-color: #000;
+    background-color: rgba(255,255,0,0.75);
+    border: 10px solid #000;
 }
 .comment-table * {
     font-family: "Gothic";
@@ -88,6 +87,11 @@ p {
 div p,
 div h2 {
     margin: 0px;
+}
+
+input {
+    background-color: rgb(255, 255, 194);
+    border: 5px solid orange;
 }
 
 /* ids */
