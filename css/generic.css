@@ -53,12 +53,12 @@ a:hover {
     font-weight: bold;
 }
 
-.comment{
+.comment {
     background-color: #FFE600;
     border-radius: 5px;
     border-color: #000;
 }
-.comment *{
+.comment * {
     font-family: "Gothic";
 }
 
