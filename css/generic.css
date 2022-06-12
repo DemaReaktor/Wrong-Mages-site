@@ -53,6 +53,15 @@ a:hover {
     font-weight: bold;
 }
 
+.comment{
+    background-color: #FFE600;
+    border-radius: 5px;
+    border-color: #000;
+}
+.comment *{
+    font-family: "Gothic";
+}
+
 h1 {
     margin-top: 50px;
     margin-bottom: 15px;
@@ -147,14 +156,6 @@ div h2 {
     padding-right: 5px;
     margin-left: auto;
     margin-right: auto;
-}
-.comment{
-    background-color: #FFE600;
-    border-radius: 5px;
-    border-color: #000;
-}
-.comment *{
-    font-family: "Gothic";
 }
 
 .table * {
