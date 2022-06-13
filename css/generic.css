@@ -75,6 +75,9 @@ a:hover {
 .user-comment-table {
     color: rgba(150,150,255,0.5);
 }
+.user-comment-name {
+    color: rgba(255,200,100,1);
+}
 .user-comment-text {
     color: rgba(255,70,255,1);
     font-size: 15px;
