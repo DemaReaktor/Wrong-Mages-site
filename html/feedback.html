@@ -8,6 +8,11 @@
     <link rel="stylesheet" type="text/css" href="https://demareaktor.github.io/Wrong-Mages-site/css/generic.css">
     <link rel="stylesheet" type="text/css" href="https://demareaktor.github.io/Wrong-Mages-site/css/feedback.css">
     <link rel="shortcut icon" href="https://demareaktor.github.io/Wrong-Mages-site/images/icon.gif" />
+    <script>
+        function add_comment_panel(){
+            document.write("<?php ");
+        }
+    </script>
 </head>
 
 <body id="fon">
@@ -36,7 +41,7 @@
     </div>
     <h2>Коментарі</h2>
     <p>Хочете побажати нам удачі, розкритикувати нас за руки із не того місця, дати рекомендацію чи просто поспілкуватись? Тоді вам сюди.</p>
-    <div class="button" id="comment">залишити коментар</div>
+    <div class="button" id="comment"><button onclick="add_comment_panel">залишити коментар</div>
 </body>
 
 </html>
