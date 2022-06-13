@@ -73,12 +73,15 @@ a:hover {
 }
 
 .user-comment-table {
+    border: 2px solid rgba(50,250,50,0.3)
     color: rgba(150,150,255,0.5);
 }
 .user-comment-name {
+    width: 200px;
     color: rgba(255,200,100,1);
 }
 .user-comment-text {
+    width: 700px;
     color: rgba(255,70,255,1);
     font-size: 15px;
 }
@@ -111,19 +114,20 @@ div h2 {
     margin: 0px;
 }
 input[type=text] {
-    width: 80px;
+    width: 200px;
 }
 textarea {
-    width: 270px;
+    width: 700px;
 }
 input[type=text], textarea {
     background-color: rgba(255, 255, 194,0.5);
     border: 2px solid rgb(255, 64, 0);
     font-size: 20px;
 }
-input[type=button] {
+input[type=submit] {
     color: green;
-    width: 50px;
+    width: auto;
+    border: 0px;
 }
 
 /* ids */
