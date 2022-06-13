@@ -57,6 +57,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: left;
+    width: 800px;
 }
 
 .comment-table {
@@ -74,18 +75,16 @@ a:hover {
 }
 
 .user-comment-table {
-    border: 2px solid rgba(50, 250, 50, 0.3);
-    color: rgba(150, 150, 255, 0.5);
+border: 2px solid rgba(50,250,50,0.3);
+color: rgba(150,150,255,0.5);
 }
-
 .user-comment-name {
-    width: 200px;
-    color: rgba(255, 200, 100, 1);
+width: 200px;
+color: rgba(255,200,100,1);
 }
-
 .user-comment-text {
     width: 700px;
-    color: rgba(255, 70, 255, 1);
+    color: rgba(255,70,255,1);
     font-size: 15px;
 }
 
