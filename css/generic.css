@@ -61,28 +61,31 @@ a:hover {
 
 .comment-table {
     padding: 8px;
-    background-color: rgba(255,225,0,0.55);
+    background-color: rgba(255, 225, 0, 0.55);
     border: 7px solid #000;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
 }
+
 .comment-table * {
     font-family: "Gothic";
 }
 
 .user-comment-table {
-    border: 2px solid rgba(50,250,50,0.3)
-    color: rgba(150,150,255,0.5);
+    border: 2px solid rgba(50, 250, 50, 0.3);
+    color: rgba(150, 150, 255, 0.5);
 }
+
 .user-comment-name {
     width: 200px;
-    color: rgba(255,200,100,1);
+    color: rgba(255, 200, 100, 1);
 }
+
 .user-comment-text {
     width: 700px;
-    color: rgba(255,70,255,1);
+    color: rgba(255, 70, 255, 1);
     font-size: 15px;
 }
 
@@ -113,20 +116,25 @@ div p,
 div h2 {
     margin: 0px;
 }
+
 input[type=text] {
-    width: 200px;
+    width: 250px;
 }
+
 textarea {
     width: 700px;
 }
-input[type=text], textarea {
-    background-color: rgba(255, 255, 194,0.5);
+
+input[type=text],
+textarea {
+    background-color: rgba(255, 255, 194, 0.5);
     border: 2px solid rgb(255, 64, 0);
     font-size: 20px;
 }
+
 input[type=submit] {
     color: green;
-    width: auto;
+    width: 100px;
     border: 0px;
 }
 
