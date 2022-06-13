@@ -64,6 +64,9 @@ a:hover {
     background-color: rgba(255,225,0,0.55);
     border: 7px solid #000;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
 }
 .comment-table * {
     font-family: "Gothic";
@@ -105,10 +108,13 @@ div h2 {
     margin: 0px;
 }
 
-input[type="text"],input[type=text], textarea {
+input[type=text], textarea {
     background-color: rgba(255, 255, 194,0.5);
     border: 2px solid rgb(255, 64, 0);
     font-size: 20px;
+}
+input[type=button] {
+    color: green;
 }
 
 /* ids */
