@@ -74,9 +74,16 @@ a:hover {
     font-family: "Gothic";
 }
 
+.comments {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
 .user-comment-table {
 border: 2px solid rgb(50,250,50);
 color: rgba(150,150,255,0.5);
+margin-right: auto;
 }
 .user-comment-name {
 width: 200px;
@@ -133,7 +140,7 @@ textarea {
 
 input[type=submit] {
     color: green;
-    width: 100px;
+    width: 200px;
     border: 0px;
 }
 
