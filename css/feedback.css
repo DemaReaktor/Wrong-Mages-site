@@ -3,9 +3,6 @@
     display: flex;
     flex-direction: row;
 }
-#buttons *{
-    margin-right: 20px;
-}
 
 #comment {
     margin-right: auto;
