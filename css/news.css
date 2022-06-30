@@ -22,14 +22,14 @@
 #scroll-table {
     overflow-y: scroll;
     align-self: center;
-    height: calc(100vh - 241px);
+    height: calc(100vh - 508px);
     margin-top: 8px;
     padding-right: 10px;
 }
 #scroll-table::before{
     width: 1051px;
-    height: calc(100vh - 233px);
-    position:fixed;
+    height: calc(100vh - 500px);
+    position:absolute;
     top: 233px;
     left: calc(50vw - 525.5px); 
     content: '';
